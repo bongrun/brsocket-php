@@ -3,6 +3,7 @@
 namespace BongRun;
 
 use PhpAmqpLib\Connection\AMQPStreamConnection;
+
 use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
 
 /**

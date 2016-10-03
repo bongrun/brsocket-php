@@ -21,7 +21,7 @@ class Socket
     public function __construct($queueConfig)
     {
         $this->queueConfig = $queueConfig;
-        $queue = new Queue($this->queueConfig);
+        $this->queue = new Queue($this->queueConfig);
     }
 
     /**

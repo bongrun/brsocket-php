@@ -1,6 +1,7 @@
 <?php
 
 namespace BongRun;
+
 use VladimirYuldashev\LaravelQueueRabbitMQ\Queue\RabbitMQQueue;
 
 /**
