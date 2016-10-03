@@ -1,0 +1,23 @@
+{
+  "name": "bongrun/brsocket-php",
+  "description": "Socket PHP часть",
+  "keywords": ["socket", "php", "websocket", "event"],
+  "homepage": "https://github.com/bongrun/brsocket-node",
+  "type": "project",
+  "license": "Apache License 2.0",
+  "support": {
+    "issues": "https://github.com/bongrun/brsocket-node/issues?state=open",
+    "source": "https://github.com/bongrun/brsocket-node"
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.0",
+    "vladimir-yuldashev/laravel-queue-rabbitmq": "^5.2"
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "autoload": {
+    "psr-4": {"BongRun\\": "src/"}
+  }
+}
