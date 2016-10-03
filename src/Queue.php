@@ -71,11 +71,13 @@ class Queue
     /**
      * @return RabbitMQQueue
      */
-    public function getQueue(){
+    public function getQueue()
+    {
         return $this->queueItem;
     }
 
-    private function setConfig($config = null){
+    private function setConfig($config = null)
+    {
         if (!is_null($config)) {
             foreach ($config as $key => $value) {
                 $this->$key = $value;
@@ -83,7 +85,8 @@ class Queue
         }
     }
 
-    private function getConfig(){
+    private function getConfig()
+    {
         $config = [];
         foreach ((array($this)) as $key => $value) {
             $config[($key{0} === "\0") ? substr($key, strpos($key, "\0", 1) + 1) : $key] = $value;

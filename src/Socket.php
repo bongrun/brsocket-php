@@ -29,7 +29,8 @@ class Socket
      * @param int|null $eventTypeId
      * @return Event
      */
-    public function instance(string $eventType, int $eventTypeId = null){
+    public function instance(string $eventType, int $eventTypeId = null)
+    {
         return new Event($this->queue->getQueue(), $eventType, $eventTypeId);
     }
 }
